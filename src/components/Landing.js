@@ -9,8 +9,8 @@ const Landing = () => {
     <Wrap>
       <GlobalStyle />
       <ItemText>
-        <h1>David Li</h1>
-        <h2>Software Engineer</h2>
+        <h1 id='landing-header1'>David Li</h1>
+        <h2 id='landing-header2'>Software Engineer</h2>
       </ItemText>
       <Buttons>
         <ButtonGroup>
@@ -21,7 +21,7 @@ const Landing = () => {
             CONTACT
           </RightButton>
         </ButtonGroup>
-        <img src={DownArrow} alt='arrow' />
+        <img src={DownArrow} alt='arrow' id='landing-img'/>
       </Buttons>
     </Wrap>
   )
@@ -77,15 +77,15 @@ const RightButton = styled(LeftButton)`
 const Buttons = styled.div``
 
 const GlobalStyle = createGlobalStyle`
-  h1 {
+  #landing-header1 {
     font-size: 40px;
     font-weight: 700;
   }
-  h2 {
+  #landing-header2 {
     font-size: 14px;
     font-weight: 400;
   }
-  img {
+  #landing-img {
     height: 40px;
     overflow-x: hidden;
     animation: animateDown infinite 1.5s;
