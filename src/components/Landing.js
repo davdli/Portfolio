@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import IcelandImage from '../assets/Iceland.jpeg';
+import DownArrow from '../assets/down-arrow.svg';
 
-const Section = () => {
+const Landing = () => {
   return (
     <Wrap>
       <GlobalStyle />
@@ -11,19 +12,22 @@ const Section = () => {
         <h1>David Li</h1>
         <h2>Software Engineer</h2>
       </ItemText>
-      <ButtonGroup>
-        <LeftButton>
-          RESUME
-        </LeftButton>
-        <RightButton>
-          CONTACT
-        </RightButton>
-      </ButtonGroup>
+      <Buttons>
+        <ButtonGroup>
+          <LeftButton>
+            RESUME
+          </LeftButton>
+          <RightButton>
+            CONTACT
+          </RightButton>
+        </ButtonGroup>
+        <img src={DownArrow} alt='arrow' />
+      </Buttons>
     </Wrap>
   )
 }
 
-export default Section;
+export default Landing;
 
 const Wrap = styled.div`
   width: 100vw;
@@ -45,6 +49,9 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const LeftButton = styled.div`
@@ -59,10 +66,15 @@ const LeftButton = styled.div`
   border-radius: 100px;
   opactiy: 0.75;
   cursor: pointer;
+  margin: 10px;
 `
 
 const RightButton = styled(LeftButton)`
+  color: #393C41;
+  background-color: #FFFFFFA6;
 `
+
+const Buttons = styled.div``
 
 const GlobalStyle = createGlobalStyle`
   h1 {
@@ -72,5 +84,10 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 14px;
     font-weight: 400;
+  }
+  img {
+    height: 40px;
+    overflow-x: hidden;
+    animation: animateDown infinite 1.5s;
   }
 `;

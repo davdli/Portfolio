@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Section from './Section';
+import Landing from './Landing';
 
 const Home = () => {
   return (
     <Container>
-      <Section />
+      <Landing />
     </Container>
   )
 }
