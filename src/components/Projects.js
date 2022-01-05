@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import PeachStudioDemo from '../assets/PeachStudioDemo1.gif';
+import ForzaDemo from '../assets/ForzaDemo1.gif';
 
 const Projects = () => {
   return (
@@ -14,12 +15,21 @@ const Projects = () => {
         <ProjectsGroup>
           <ProjectInfo>
             <ProjectImg>
-            <img src={PeachStudioDemo} alt='project' id='project-img' />
+            <img src={PeachStudioDemo} alt='peachStudio' id='project-img' />
             </ProjectImg>
             <ProjectText>
               <h4 id='project-title'>Peach Studio</h4>
               <p id='project-description'>An e-commerce website specializing in furniture to make your home .... sweet home</p>
             </ProjectText>
+          </ProjectInfo>
+          <ProjectInfo>
+            <ProjectText>
+              <h4 id='project-title'>Forza</h4>
+              <p id='project-description'>Mobile and web application that allow users to help track their progress at the gym using speech recognition</p>
+            </ProjectText>
+            <ProjectImg>
+            <img src={ForzaDemo} alt='forza' id='project-img' />
+            </ProjectImg>
           </ProjectInfo>
         </ProjectsGroup>
       </Wrap>
@@ -55,12 +65,12 @@ const ProjectInfo = styled.div`
 `
 
 const ProjectImg = styled.div`
-  margin-right: 65px;
+  margin: 0px 70px 0px 70px;
 `
 
 const ProjectText = styled.div`
   text-align: left;
-  margin-left: 65px;
+  margin: 0px 70px 0px 70px;
 `
 
 const GlobalStyle = createGlobalStyle`
