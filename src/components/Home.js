@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Landing from './Landing';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Tech from './Tech';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Landing />
       <AboutMe />
       <Projects />
+      <Tech />
     </Container>
   )
 }

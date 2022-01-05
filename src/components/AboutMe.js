@@ -40,7 +40,7 @@ export default AboutMe;
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 98vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
