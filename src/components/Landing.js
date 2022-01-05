@@ -10,7 +10,7 @@ const Landing = () => {
       <GlobalStyle />
       <ItemText>
         <h1 id='landing-header1'>David Li</h1>
-        <h2 id='landing-header2'>Software Engineer</h2>
+        <h2 id='landing-header2'>Software Developer</h2>
       </ItemText>
       <Buttons>
         <ButtonGroup>

@@ -73,7 +73,7 @@ const Projects = () => {
           <ProjectInfo>
             <ProjectText>
               <h4 id='left-title'>White Cloud</h4>
-              <p id='left-description'>Platform that provides a user the opportunity to discover music and learn and play the piano instantly.</p>
+              <p id='left-description'>Platform that will provide users the opportunity to discover music and learn and play the piano instantly.</p>
               <ButtonGroup id='left-button'>
                 <LeftButton>
                   Coming Soon
@@ -94,7 +94,7 @@ export default Projects;
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 200vh;
+  height: 188vh;
   background-color: #000;
   display: flex;
   flex-direction: column;

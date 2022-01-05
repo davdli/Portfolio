@@ -16,7 +16,7 @@ const AboutMe = () => {
             <img src={ProfilePicture} alt='profile' id='about-img' />
           </AboutImg>
           <AboutText>
-            <p id='about-text'>Hi, I'm David and a software engineer from New York City!
+            <p id='about-text'>Hi, I'm David and a software developer from New York City!
               Growing up, I kept seeing the amazing things that were being built using programming.
               I wanted to learn how to build things that would mean something to me and could solve a problem.
               Now it has also become a tool for me to express the creative and analytical qualities in myself.
@@ -40,7 +40,7 @@ export default AboutMe;
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 98vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
