@@ -15,6 +15,21 @@ const AboutMe = () => {
           <AboutImg>
             <img src={ProfilePicture} alt='profile' id='about-img' />
           </AboutImg>
+          <AboutText>
+            <p>Hi, I'm David and a software engineer from New York City!
+              Growing up, I kept seeing the amazing things that were being built using programming.
+              I wanted to learn how to build things that would mean something to me and could solve a problem.
+              Now it has also become a tool for me to express the creative and analytical qualities in myself.
+            </p>
+            <br />
+            <p>I am a recent graduate of Binghamton University with a degree in economics and Fullstack Academy with a certification in full-stack web development.
+              Over the past year, I have been building applications using JavaScript, Node.js, React, Express, PostgreSQL, and other technologies.
+              As the nature of technology continues to evolve, I strive to expand my skillset and keep up with new languages and frameworks.
+            </p>
+            <br />
+            <p>My goal is to be in the forefront of innovation and contribute to tackling the problems we have in our society.
+              I hope to continue to work on projects that can be impactful and produce code that has a postive change.</p>
+          </AboutText>
         </AboutGroup>
       </Wrap>
     </div>
@@ -43,6 +58,8 @@ const AboutGroup = styled.div`
 `
 const AboutImg = styled.div``
 
+const AboutText = styled.div``
+
 const GlobalStyle = createGlobalStyle`
   #about-header {
     font-size: 28px;
@@ -53,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
     color: #E2E4E4;
     font-size: 14px;
     margin-left: 130px;
-    width: 30vw;
+    width: 40vw;
   }
   #about-img {
     height: 500px;
