@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import IcelandImage from '../assets/Iceland.jpeg';
 import DownArrow from '../assets/down-arrow.svg';
+import Header from './Header';
 
 const Landing = () => {
   return (
     <Wrap>
       <GlobalStyle />
+      <Header />
       <ItemText>
         <h1 id='landing-header1'>David Li</h1>
         <h2 id='landing-header2'>Software Developer</h2>
