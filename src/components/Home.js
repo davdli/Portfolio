@@ -4,6 +4,7 @@ import Landing from './Landing';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Tech from './Tech';
+import ContactMe from './ContactMe';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutMe />
       <Projects />
       <Tech />
+      <ContactMe />
     </Container>
   )
 }
