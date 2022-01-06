@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import {createGlobalStyle} from "styled-components";
 
 const ContactMe = () => {
   return (
     <div>
       <Wrap>
-        <GlobalStyle />
         <TitleText>
-          Contact
+          Contact Me
         </TitleText>
         <ContactText>
           Looking for a software developer or have any questions?
@@ -64,4 +62,3 @@ const ContactButton = styled.div`
   margin-top: 15px;
 `
 
-const GlobalStyle = createGlobalStyle``
