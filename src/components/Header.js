@@ -34,9 +34,10 @@ export default Header;
 
 const Container = styled.div`
   min-height: 60px;
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
   top: 0;
   left: 0;
@@ -66,6 +67,9 @@ const Menu = styled.div`
     font-weight: 500;
     padding: 0 16px;
     flex-wrap: nowrap;
+  }
+  @media(max-width: 768px) {
+    display: none;
   }
 `
 
