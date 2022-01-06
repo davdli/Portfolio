@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 const Header = () => {
   return (
@@ -8,19 +9,23 @@ const Header = () => {
       <GlobalStyle />
       <LeftIcons>
         <a href="https://www.linkedin.com/in/davdli/">
-          <i class="devicon-github-original"></i>
+          <i id="header-icon" class="devicon-github-original"></i>
         </a>
         <a href="https://github.com/davdli">
-          <i class="devicon-linkedin-plain"></i>
+          <i id="header-icon" class="devicon-linkedin-plain"></i>
         </a>
       </LeftIcons>
       <Menu>
-        <p><a href="#">Home</a></p>
-        <p><a href="#">About</a></p>
-        <p><a href="#">Projects</a></p>
-        <p><a href="#">Technologies</a></p>
-        <p><a href="#">Contact</a></p>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Technologies</a>
+        <a href="#">Contact</a>
       </Menu>
+      <RightMenu>
+        <a href="#">Resume</a>
+        <CustomMenu />
+      </RightMenu>
     </Container>
   )
 }
@@ -38,29 +43,44 @@ const Container = styled.div`
   right: 0;
 `
 
-const LeftIcons = styled.div``
+const LeftIcons = styled.div`
+  .devicon-github-original {
+    font-size: 36px;
+    color: #393c41;
+    margin: 0px 10px 0px 10px;
+  }
+  .devicon-linkedin-plain {
+    font-size: 36px;
+    color: #393c41;
+    margin: 0px 10px 0px 10px;
+  }
+`
 
 const Menu = styled.div`
   display: flex;
-  align-itmes: center;
+  align-items: center;
   justify-content: center;
   flex: 1;
-  p {
+  margin-left: 50px;
+  a {
     font-weight: 500;
     padding: 0 16px;
     flex-wrap: nowrap;
   }
 `
 
-const GlobalStyle = createGlobalStyle`
-  .devicon-github-original {
-    font-size: 36px;
-    color: #F4F4F4;
-    margin: 0px 10px 0px 10px;
-  }
-  .devicon-linkedin-plain {
-    font-size: 36px;
-    color: #F4F4F4;
-    margin: 0px 10px 0px 10px;
+const RightMenu = styled.div`
+  display: flex;
+  align-items: center;
+  a {
+    font-weight: 500;
+    padding: 0 16px;
+    margin-right: 10px;
   }
 `
+
+const CustomMenu = styled(MenuRoundedIcon)`
+  cursor: pointer;
+`
+
+const GlobalStyle = createGlobalStyle``
