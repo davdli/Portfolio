@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import {createGlobalStyle} from "styled-components";
 
 const ContactMe = () => {
   return (
     <div>
       <Wrap id="contact">
+        <GlobalStyle />
         <TitleText>
           Contact Me
         </TitleText>
         <ContactText>
           Looking for a software developer or have any questions?
         </ContactText>
-        <ContactButton>
-          EMAIL ME
-        </ContactButton>
+        <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">CONTACT</a>
       </Wrap>
     </div>
   )
@@ -44,21 +44,22 @@ const ContactText = styled.div`
   margin-top: 5px;
 `
 
-const ContactButton = styled.div`
-  color: #000000;
-  font-size: 12px;
-  font-weight: 700;
-  background-color: transparent;
-  height: 40px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #000000;
-  cursor: pointer;
-  margin-top: 15px;
+const GlobalStyle = createGlobalStyle`
+  #email-link {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: transparent;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    cursor: pointer;
+    margin-top: 15px;
+  }
 `
-

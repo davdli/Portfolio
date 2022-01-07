@@ -30,12 +30,8 @@ const Projects = () => {
                 <h4 id='project-title'>Tagd</h4>
                 <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to to help their guests access and locate necessities in and around their property.</p>
                 <ButtonGroup>
-                  <LeftButton>
-                    GitHub
-                  </LeftButton>
-                  <RightButton>
-                    Set Up
-                  </RightButton>
+                  <a href='https://github.com/davdli/Tagd_Frontend' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
+                  <a href='https://github.com/davdli/Tagd_Backend' target="_blank" rel="noreferrer" className="live-link">Set Up</a>
                 </ButtonGroup>
               </ProjectText>
             </Fade>
@@ -47,12 +43,8 @@ const Projects = () => {
                 <h4 id='left-title'>Peach Studio</h4>
                 <p id='left-description'>An e-commerce website specializing in furniture to make your home .... sweet home.</p>
                 <ButtonGroup id='left-button'>
-                  <LeftButton>
-                    GitHub
-                  </LeftButton>
-                  <RightButton>
-                    Live
-                  </RightButton>
+                  <a href='https://github.com/davdli/Peach_Studio' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
+                  <a href='http://peach-studio.herokuapp.com/' target="_blank" rel="noreferrer" className="live-link">Live</a>
                 </ButtonGroup>
               </ProjectText>
             </Fade>
@@ -74,12 +66,8 @@ const Projects = () => {
                 <h4 id='project-title'>Forza</h4>
                 <p id='project-description'>Mobile and web application where users can track their strength progress at the gym using speech recognition.</p>
                 <ButtonGroup>
-                  <LeftButton>
-                    GitHub
-                  </LeftButton>
-                  <RightButton>
-                    Live
-                  </RightButton>
+                  <a href='https://github.com/davdli/Forza' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
+                  <a href='https://forza.netlify.app/' target="_blank" rel="noreferrer" className="live-link">Live</a>
                 </ButtonGroup>
               </ProjectText>
             </Fade>
@@ -91,9 +79,7 @@ const Projects = () => {
                 <h4 id='left-title'>White Cloud</h4>
                 <p id='left-description'>Platform that will provide users the opportunity to discover music and learn and play the piano instantly.</p>
                 <ButtonGroup id='left-button'>
-                  <LeftButton>
-                    Coming Soon
-                  </LeftButton>
+                  <a href='https://github.com/davdli/White_Cloud' target="_blank" rel="noreferrer" className="github-link">Coming Soon</a>
                 </ButtonGroup>
               </ProjectText>
             </Fade>
@@ -152,28 +138,6 @@ const ButtonGroup = styled.div`
   }
 `
 
-const LeftButton = styled.div`
-  color: #F5F5F5;
-  font-size: 12px;
-  height: 35px;
-  width: 195px;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #F5F5F5;
-  cursor: pointer;
-  margin: 5px;
-`
-
-const RightButton = styled(LeftButton)`
-  color: #D0D1D2;
-  border-color: #393C41;
-`
-
 const GlobalStyle = createGlobalStyle`
   #projects-header {
     font-size: 28px;
@@ -210,5 +174,37 @@ const GlobalStyle = createGlobalStyle`
   }
   #left-button {
     padding: 0px 0px 12px 12px;
+  }
+  .github-link {
+    color: #F5F5F5;
+    font-size: 12px;
+    height: 35px;
+    width: 195px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F5F5F5;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .live-link {
+    color: #D0D1D2;
+    font-size: 12px;
+    height: 35px;
+    width: 195px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #393C41;
+    cursor: pointer;
+    margin: 5px;
   }
 `

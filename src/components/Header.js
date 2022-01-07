@@ -4,6 +4,7 @@ import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
+import resume from '../assets/Resume.pdf';
 
 const Header = () => {
   return (
@@ -11,10 +12,10 @@ const Header = () => {
       <GlobalStyle />
       <Fade clear>
         <LeftIcons>
-          <a href="https://github.com/davdli">
+          <a href="https://github.com/davdli" target="_blank" rel="noreferrer">
             <i id="header-icon" class="devicon-github-original"></i>
           </a>
-          <a href="https://www.linkedin.com/in/davdli/">
+          <a href="https://www.linkedin.com/in/davdli/" target="_blank" rel="noreferrer">
             <i id="header-icon" class="devicon-linkedin-plain"></i>
           </a>
         </LeftIcons>
@@ -33,7 +34,7 @@ const Header = () => {
           <Link to="contact" href="#" smooth={true} duration={4000}>Contact</Link>
         </Menu>
         <RightMenu>
-          <a href="#">Resume</a>
+          <a href={resume} target="_blank" rel="noreferrer">Resume</a>
           <CustomMenu />
         </RightMenu>
       </Fade>
