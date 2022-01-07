@@ -5,6 +5,7 @@ import IcelandImage from '../assets/Iceland.jpeg';
 import DownArrow from '../assets/down-arrow.svg';
 import Header from './Header';
 import Fade from 'react-reveal/Fade';
+import resume from '../assets/Resume.pdf';
 
 const Landing = () => {
   return (
@@ -21,7 +22,7 @@ const Landing = () => {
         <ButtonGroup>
           <Fade left>
             <LeftButton>
-              RESUME
+              <a href={resume} target="_blank" rel="noreferrer" id="resume-link">RESUME</a>
             </LeftButton>
           </Fade>
           <Fade right>
@@ -98,5 +99,8 @@ const GlobalStyle = createGlobalStyle`
     height: 40px;
     overflow-x: hidden;
     animation: animateDown infinite 1.5s;
+  }
+  #resume-link {
+    color: white;
   }
 `;

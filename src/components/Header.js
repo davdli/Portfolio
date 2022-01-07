@@ -12,10 +12,10 @@ const Header = () => {
       <GlobalStyle />
       <Fade clear>
         <LeftIcons>
-          <a href="https://github.com/davdli">
+          <a href="https://github.com/davdli" target="_blank" rel="noreferrer">
             <i id="header-icon" class="devicon-github-original"></i>
           </a>
-          <a href="https://www.linkedin.com/in/davdli/">
+          <a href="https://www.linkedin.com/in/davdli/" target="_blank" rel="noreferrer">
             <i id="header-icon" class="devicon-linkedin-plain"></i>
           </a>
         </LeftIcons>
