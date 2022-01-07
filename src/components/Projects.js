@@ -5,6 +5,7 @@ import TagdDemo from '../assets/TagdHostDemo2.gif';
 import PeachStudioDemo from '../assets/PeachStudioDemo1.gif';
 import ForzaDemo from '../assets/ForzaDemo1.gif';
 import WhiteCloudDemo from '../assets/WhiteCloudDemo.gif';
+import Fade from 'react-reveal/Fade';
 
 
 const Projects = () => {
@@ -12,77 +13,95 @@ const Projects = () => {
     <div>
       <Wrap>
         <GlobalStyle />
-        <ProjectsTitle>
-          <h2 id='projects-header'>Projects</h2>
-        </ProjectsTitle>
+        <Fade bottom>
+          <ProjectsTitle>
+            <h2 id='projects-header'>Projects</h2>
+          </ProjectsTitle>
+        </Fade>
         <ProjectsGroup>
           <ProjectInfo>
-            <ProjectImg>
-            <img src={TagdDemo} alt='Tagd' id='tagd-img' />
-            </ProjectImg>
-            <ProjectText>
-              <h4 id='project-title'>Tagd</h4>
-              <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to to help their guests access and locate necessities in and around their property.</p>
-              <ButtonGroup>
-                <LeftButton>
-                  GitHub
-                </LeftButton>
-                <RightButton>
-                  Set Up
-                </RightButton>
-              </ButtonGroup>
-            </ProjectText>
+            <Fade bottom>
+              <ProjectImg>
+              <img src={TagdDemo} alt='Tagd' id='tagd-img' />
+              </ProjectImg>
+            </Fade>
+            <Fade bottom>
+              <ProjectText>
+                <h4 id='project-title'>Tagd</h4>
+                <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to to help their guests access and locate necessities in and around their property.</p>
+                <ButtonGroup>
+                  <LeftButton>
+                    GitHub
+                  </LeftButton>
+                  <RightButton>
+                    Set Up
+                  </RightButton>
+                </ButtonGroup>
+              </ProjectText>
+            </Fade>
           </ProjectInfo>
 
           <ProjectInfo>
-            <ProjectText>
-              <h4 id='left-title'>Peach Studio</h4>
-              <p id='left-description'>An e-commerce website specializing in furniture to make your home .... sweet home.</p>
-              <ButtonGroup id='left-button'>
-                <LeftButton>
-                  GitHub
-                </LeftButton>
-                <RightButton>
-                  Live
-                </RightButton>
-              </ButtonGroup>
-            </ProjectText>
-            <ProjectImg>
-            <img src={PeachStudioDemo} alt='peachStudio' id='project-img' />
-            </ProjectImg>
+            <Fade bottom>
+              <ProjectText>
+                <h4 id='left-title'>Peach Studio</h4>
+                <p id='left-description'>An e-commerce website specializing in furniture to make your home .... sweet home.</p>
+                <ButtonGroup id='left-button'>
+                  <LeftButton>
+                    GitHub
+                  </LeftButton>
+                  <RightButton>
+                    Live
+                  </RightButton>
+                </ButtonGroup>
+              </ProjectText>
+            </Fade>
+            <Fade bottom>
+              <ProjectImg>
+              <img src={PeachStudioDemo} alt='peachStudio' id='project-img' />
+              </ProjectImg>
+            </Fade>
           </ProjectInfo>
 
           <ProjectInfo>
-            <ProjectImg>
-            <img src={ForzaDemo} alt='forza' id='project-img' />
-            </ProjectImg>
-            <ProjectText>
-              <h4 id='project-title'>Forza</h4>
-              <p id='project-description'>Mobile and web application where users can track their strength progress at the gym using speech recognition.</p>
-              <ButtonGroup>
-                <LeftButton>
-                  GitHub
-                </LeftButton>
-                <RightButton>
-                  Live
-                </RightButton>
-              </ButtonGroup>
-            </ProjectText>
+            <Fade bottom>
+              <ProjectImg>
+              <img src={ForzaDemo} alt='forza' id='project-img' />
+              </ProjectImg>
+            </Fade>
+            <Fade bottom>
+              <ProjectText>
+                <h4 id='project-title'>Forza</h4>
+                <p id='project-description'>Mobile and web application where users can track their strength progress at the gym using speech recognition.</p>
+                <ButtonGroup>
+                  <LeftButton>
+                    GitHub
+                  </LeftButton>
+                  <RightButton>
+                    Live
+                  </RightButton>
+                </ButtonGroup>
+              </ProjectText>
+            </Fade>
           </ProjectInfo>
 
           <ProjectInfo>
-            <ProjectText>
-              <h4 id='left-title'>White Cloud</h4>
-              <p id='left-description'>Platform that will provide users the opportunity to discover music and learn and play the piano instantly.</p>
-              <ButtonGroup id='left-button'>
-                <LeftButton>
-                  Coming Soon
-                </LeftButton>
-              </ButtonGroup>
-            </ProjectText>
-            <ProjectImg>
-            <img src={WhiteCloudDemo} alt='whiteCloud' id='project-img' />
-            </ProjectImg>
+            <Fade bottom>
+              <ProjectText>
+                <h4 id='left-title'>White Cloud</h4>
+                <p id='left-description'>Platform that will provide users the opportunity to discover music and learn and play the piano instantly.</p>
+                <ButtonGroup id='left-button'>
+                  <LeftButton>
+                    Coming Soon
+                  </LeftButton>
+                </ButtonGroup>
+              </ProjectText>
+            </Fade>
+            <Fade bottom>
+              <ProjectImg>
+              <img src={WhiteCloudDemo} alt='whiteCloud' id='project-img' />
+              </ProjectImg>
+            </Fade>
           </ProjectInfo>
         </ProjectsGroup>
       </Wrap>

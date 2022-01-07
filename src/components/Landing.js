@@ -4,26 +4,33 @@ import {createGlobalStyle} from "styled-components";
 import IcelandImage from '../assets/Iceland.jpeg';
 import DownArrow from '../assets/down-arrow.svg';
 import Header from './Header';
+import Fade from 'react-reveal/Fade';
 
 const Landing = () => {
   return (
     <Wrap>
       <GlobalStyle />
       <Header />
-      <ItemText>
-        <h1 id='landing-header1'>David Li</h1>
-        <h2 id='landing-header2'>Software Developer</h2>
-      </ItemText>
+      <Fade bottom>
+        <ItemText>
+          <h1 id='landing-header1'>David Li</h1>
+          <h2 id='landing-header2'>Software Developer</h2>
+        </ItemText>
+      </Fade>
       <Buttons>
         <ButtonGroup>
-          <LeftButton>
-            RESUME
-          </LeftButton>
-          <RightButton>
-            CONTACT
-          </RightButton>
+          <Fade left>
+            <LeftButton>
+              RESUME
+            </LeftButton>
+          </Fade>
+          <Fade right>
+            <RightButton>
+              CONTACT
+            </RightButton>
+          </Fade>
         </ButtonGroup>
-        <img src={DownArrow} alt='arrow' id='landing-img'/>
+          <img src={DownArrow} alt='arrow' id='landing-img'/>
       </Buttons>
     </Wrap>
   )

@@ -2,15 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import ProfilePicture from '../assets/profile-picture.png';
+import Fade from 'react-reveal/Fade';
 
 const AboutMe = () => {
   return (
     <div>
       <Wrap>
         <GlobalStyle />
-        <TitleText>
-          <h2 id='about-header'>About Me</h2>
-        </TitleText>
+        <Fade bottom>
+          <TitleText>
+            <h2 id='about-header'>About Me</h2>
+          </TitleText>
+        </Fade>
         <AboutGroup>
           <AboutImg>
             <img src={ProfilePicture} alt='profile' id='about-img' />
