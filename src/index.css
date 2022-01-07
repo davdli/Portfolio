@@ -15,9 +15,9 @@ a {
   text-decoration: none;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 @keyframes animateDown {
   0%, 20%, 50%, 80%, 100% {

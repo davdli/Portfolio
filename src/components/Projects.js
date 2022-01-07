@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 const Projects = () => {
   return (
     <div>
-      <Wrap>
+      <Wrap id='projects'>
         <GlobalStyle />
         <Fade bottom>
           <ProjectsTitle>

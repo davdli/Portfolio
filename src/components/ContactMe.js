@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ContactMe = () => {
   return (
     <div>
-      <Wrap>
+      <Wrap id="contact">
         <TitleText>
           Contact Me
         </TitleText>

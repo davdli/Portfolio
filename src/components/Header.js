@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -18,11 +19,18 @@ const Header = () => {
           </a>
         </LeftIcons>
         <Menu>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Technologies</a>
-          <a href="#">Contact</a>
+          {/* <a href="#landing">Home</a> */}
+          <Link to="landing" href="#" smooth={true} duration={1000}>Home</Link>
+          {/* <a href="#about">About</a> */}
+          <Link to="about" href="#" smooth={true} duration={1000}>About</Link>
+          {/* <a href="#projects">Projects</a> */}
+          <Link to="projects" href="#" smooth={true} duration={2000}>Projects</Link>
+          {/* <a href="#technologies">Technologies</a> */}
+          <Link to="technologies" href="#" smooth={true} duration={3000}>Technologies</Link>
+          {/* <a href="#">Technologies</a> */}
+          <Link to="technologies" href="#" smooth={true} duration={3000}>Technologies</Link>
+          {/* <a href="#contact">Contact</a> */}
+          <Link to="contact" href="#" smooth={true} duration={4000}>Contact</Link>
         </Menu>
         <RightMenu>
           <a href="#">Resume</a>
@@ -90,4 +98,5 @@ const CustomMenu = styled(MenuRoundedIcon)`
   cursor: pointer;
 `
 
-const GlobalStyle = createGlobalStyle``
+const GlobalStyle = createGlobalStyle`
+`
