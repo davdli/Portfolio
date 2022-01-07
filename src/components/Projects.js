@@ -138,28 +138,6 @@ const ButtonGroup = styled.div`
   }
 `
 
-const LeftButton = styled.div`
-  color: #F5F5F5;
-  font-size: 12px;
-  height: 35px;
-  width: 195px;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #F5F5F5;
-  cursor: pointer;
-  margin: 5px;
-`
-
-const RightButton = styled(LeftButton)`
-  color: #D0D1D2;
-  border-color: #393C41;
-`
-
 const GlobalStyle = createGlobalStyle`
   #projects-header {
     font-size: 28px;

@@ -24,9 +24,7 @@ const Landing = () => {
             <a href={resume} target="_blank" rel="noreferrer" id="resume-link">RESUME</a>
           </Fade>
           <Fade right>
-            <RightButton>
-              CONTACT
-            </RightButton>
+            <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="contact-link">CONTACT</a>
           </Fade>
         </ButtonGroup>
           <img src={DownArrow} alt='arrow' id='landing-img'/>
@@ -62,26 +60,6 @@ const ButtonGroup = styled.div`
   }
 `
 
-const LeftButton = styled.div`
-  color: white;
-  font-size: 12;
-  background-color: #171A20CC;
-  height: 40px;
-  width: 256px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  opactiy: 0.75;
-  cursor: pointer;
-  margin: 10px;
-`
-
-const RightButton = styled(LeftButton)`
-  color: #393C41;
-  background-color: #FFFFFFA6;
-`
-
 const Buttons = styled.div``
 
 const GlobalStyle = createGlobalStyle`
@@ -102,6 +80,20 @@ const GlobalStyle = createGlobalStyle`
     color: white;
     font-size: 12;
     background-color: #171A20CC;
+    height: 40px;
+    width: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    opactiy: 0.75;
+    cursor: pointer;
+    margin: 10px;
+  }
+  #contact-link {
+    color: #393C41;
+    font-size: 12;
+    background-color: #FFFFFFA6;
     height: 40px;
     width: 256px;
     display: flex;
