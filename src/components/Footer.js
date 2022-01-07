@@ -11,8 +11,12 @@ const Footer = () => {
           David Li © 2022
         </FooterText>
         <Icons>
+          <a href="https://github.com/davdli" target="_blank" rel="noreferrer">
             <i class="devicon-github-original"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/davdli/" target="_blank" rel="noreferrer">
             <i class="devicon-linkedin-plain"></i>
+          </a>
         </Icons>
       </Wrap>
     </div>

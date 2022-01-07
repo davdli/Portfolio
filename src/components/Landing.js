@@ -21,9 +21,7 @@ const Landing = () => {
       <Buttons>
         <ButtonGroup>
           <Fade left>
-            <LeftButton>
-              <a href={resume} target="_blank" rel="noreferrer" id="resume-link">RESUME</a>
-            </LeftButton>
+            <a href={resume} target="_blank" rel="noreferrer" id="resume-link">RESUME</a>
           </Fade>
           <Fade right>
             <RightButton>
@@ -102,5 +100,16 @@ const GlobalStyle = createGlobalStyle`
   }
   #resume-link {
     color: white;
+    font-size: 12;
+    background-color: #171A20CC;
+    height: 40px;
+    width: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    opactiy: 0.75;
+    cursor: pointer;
+    margin: 10px;
   }
 `;
