@@ -4,6 +4,7 @@ import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
+import resume from '../assets/Resume.pdf';
 
 const Header = () => {
   return (
@@ -33,7 +34,7 @@ const Header = () => {
           <Link to="contact" href="#" smooth={true} duration={4000}>Contact</Link>
         </Menu>
         <RightMenu>
-          <a href="#">Resume</a>
+          <a href={resume} target="_blank" rel="noreferrer">Resume</a>
           <CustomMenu />
         </RightMenu>
       </Fade>
