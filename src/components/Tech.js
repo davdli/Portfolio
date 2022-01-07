@@ -5,7 +5,7 @@ import {createGlobalStyle} from "styled-components";
 const Tech = () => {
   return (
     <div>
-      <Wrap>
+      <Wrap id='technologies'>
         <GlobalStyle />
         <TitleText>
           <h2 id='tech-header'>Technologies</h2>

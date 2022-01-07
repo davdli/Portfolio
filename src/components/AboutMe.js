@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 const AboutMe = () => {
   return (
     <div>
-      <Wrap>
+      <Wrap id='about'>
         <GlobalStyle />
         <Fade bottom>
           <TitleText>

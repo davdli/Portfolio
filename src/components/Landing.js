@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 
 const Landing = () => {
   return (
-    <Wrap>
+    <Wrap id='landing'>
       <GlobalStyle />
       <Header />
       <Fade bottom>
