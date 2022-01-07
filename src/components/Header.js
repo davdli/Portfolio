@@ -2,30 +2,33 @@ import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import Fade from 'react-reveal/Fade';
 
 const Header = () => {
   return (
     <Container>
       <GlobalStyle />
-      <LeftIcons>
-        <a href="https://www.linkedin.com/in/davdli/">
-          <i id="header-icon" class="devicon-github-original"></i>
-        </a>
-        <a href="https://github.com/davdli">
-          <i id="header-icon" class="devicon-linkedin-plain"></i>
-        </a>
-      </LeftIcons>
-      <Menu>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Technologies</a>
-        <a href="#">Contact</a>
-      </Menu>
-      <RightMenu>
-        <a href="#">Resume</a>
-        <CustomMenu />
-      </RightMenu>
+      <Fade clear>
+        <LeftIcons>
+          <a href="https://www.linkedin.com/in/davdli/">
+            <i id="header-icon" class="devicon-github-original"></i>
+          </a>
+          <a href="https://github.com/davdli">
+            <i id="header-icon" class="devicon-linkedin-plain"></i>
+          </a>
+        </LeftIcons>
+        <Menu>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#">Technologies</a>
+          <a href="#">Contact</a>
+        </Menu>
+        <RightMenu>
+          <a href="#">Resume</a>
+          <CustomMenu />
+        </RightMenu>
+      </Fade>
     </Container>
   )
 }
