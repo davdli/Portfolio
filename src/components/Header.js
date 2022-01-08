@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
@@ -8,6 +8,8 @@ import resume from '../assets/Resume.pdf';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
+  const [burgerStatus, setBurgerStatus] = useState(false);
+
   return (
     <Container>
       <GlobalStyle />
@@ -36,12 +38,12 @@ const Header = () => {
         </Menu>
         <RightMenu>
           <a href={resume} target="_blank" rel="noreferrer">Resume</a>
-          <CustomMenu />
+          <CustomMenu onClick={() => setBurgerStatus(true)}/>
         </RightMenu>
       </Fade>
-      <BurgerNav>
+      <BurgerNav show={burgerStatus}>
         <CloseWrapper>
-          <CustomClose />
+          <CustomClose onClick={() => setBurgerStatus(false)}/>
         </CloseWrapper>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -125,6 +127,7 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
+  transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
   li {
     padding: 15px 0px;
     a {
