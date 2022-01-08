@@ -38,6 +38,13 @@ const Header = () => {
           <CustomMenu />
         </RightMenu>
       </Fade>
+      <BurgerNav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Technologies</a></li>
+        <li><a href="#">Contact</a></li>
+      </BurgerNav>
     </Container>
   )
 }
@@ -45,6 +52,7 @@ const Header = () => {
 export default Header;
 
 const Container = styled.div`
+  z-index: 1;
   min-height: 60px;
   position: absolute;
   display: flex;
@@ -97,6 +105,28 @@ const RightMenu = styled.div`
 
 const CustomMenu = styled(MenuRoundedIcon)`
   cursor: pointer;
+`
+
+const BurgerNav = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 300px;
+  height: 100vh;
+  z-index: 16;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  li {
+    padding: 15px 0px;
+    a {
+      font-weight: 500;
+    }
+  }
 `
 
 const GlobalStyle = createGlobalStyle`
