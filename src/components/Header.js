@@ -5,6 +5,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import resume from '../assets/Resume.pdf';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
   return (
@@ -39,6 +40,9 @@ const Header = () => {
         </RightMenu>
       </Fade>
       <BurgerNav>
+        <CloseWrapper>
+          <CustomClose />
+        </CloseWrapper>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
@@ -127,6 +131,15 @@ const BurgerNav = styled.div`
       font-weight: 500;
     }
   }
+`
+
+const CustomClose = styled(CloseIcon)`
+  cursor: pointer;
+`
+
+const CloseWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `
 
 const GlobalStyle = createGlobalStyle`
