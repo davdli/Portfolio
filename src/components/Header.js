@@ -23,14 +23,14 @@ const Header = () => {
           </a>
         </LeftIcons>
         <Menu>
-          <Link to="landing" href="#" smooth={true} duration={1000}>Home</Link>
-          <Link to="about" href="#" smooth={true} duration={1000}>About</Link>
-          <Link to="projects" href="#" smooth={true} duration={2000}>Projects</Link>
-          <Link to="technologies" href="#" smooth={true} duration={3000}>Technologies</Link>
-          <Link to="contact" href="#" smooth={true} duration={4000}>Contact</Link>
+          <Link to="landing" href="#" smooth={true} duration={1000} className="nav-link">Home</Link>
+          <Link to="about" href="#" smooth={true} duration={1000} className="nav-link">About</Link>
+          <Link to="projects" href="#" smooth={true} duration={2000} className="nav-link">Projects</Link>
+          <Link to="technologies" href="#" smooth={true} duration={3000} className="nav-link">Technologies</Link>
+          <Link to="contact" href="#" smooth={true} duration={4000} className="nav-link">Contact</Link>
         </Menu>
         <RightMenu>
-          <a href={resume} target="_blank" rel="noreferrer">Resume</a>
+          <a href={resume} target="_blank" rel="noreferrer" className="nav-link">Resume</a>
           <CustomMenu onClick={() => setBurgerStatus(true)}/>
         </RightMenu>
       </Fade>
@@ -43,6 +43,9 @@ const Header = () => {
         <li><a href="#projects" onClick={() => setBurgerStatus(false)}>Projects</a></li>
         <li><a href="#technologies" onClick={() => setBurgerStatus(false)}>Technologies</a></li>
         <li><a href="#contact" onClick={() => setBurgerStatus(false)}>Contact</a></li>
+        <li><a href="https://github.com/davdli" target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/davdli/" target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>LinkedIn</a></li>
+        <li><a href={resume} target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>Resume</a></li>
       </BurgerNav>
     </Container>
   )
@@ -123,11 +126,19 @@ const BurgerNav = styled.div`
   transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
   transition: transform 0.5s;
   li {
-    padding: 15px 0px;
+    padding: 6px 0px;
+    margin: 0px 15px 15px 15px;
     a {
       font-weight: 500;
+      color: #393C41;
+      padding: 0px 15px;
     }
   }
+  li: hover {
+    background-color: #0000000D;
+    border-radius: 12px;
+    padding: 6px 0px;
+}
 `
 
 const CustomClose = styled(CloseIcon)`
@@ -137,7 +148,14 @@ const CustomClose = styled(CloseIcon)`
 const CloseWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 40px;
+  margin-top: 10px;
 `
 
 const GlobalStyle = createGlobalStyle`
+  .nav-link: hover {
+    background-color: #0000000D;
+    border-radius: 12px;
+    padding: 6px 16px;
+}
 `

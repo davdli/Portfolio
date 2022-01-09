@@ -8,12 +8,12 @@ const ContactMe = () => {
       <Wrap id="contact">
         <GlobalStyle />
         <TitleText>
-          Contact Me
+          Contact
         </TitleText>
         <ContactText>
-          Looking for a software developer or have any questions?
+          Interested in working together or have any questions?
         </ContactText>
-        <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">CONTACT</a>
+        <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">CONTACT ME</a>
       </Wrap>
     </div>
   )
@@ -48,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
   #email-link {
     color: #000000;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     background-color: transparent;
     height: 40px;
     width: 200px;
@@ -61,5 +61,9 @@ const GlobalStyle = createGlobalStyle`
     border-color: #000000;
     cursor: pointer;
     margin-top: 15px;
+  }
+  #email-link: hover {
+    color: #F4F4F4;
+    background-color: #000000;
   }
 `
