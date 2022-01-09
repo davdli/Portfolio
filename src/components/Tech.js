@@ -165,12 +165,14 @@ padding: 20px 20px 20px;
 
 const TechName = styled.div`
   color: #5C5D61;
+  font-size: 17px;
+  font-weight: 500;
   padding: 0px 0px 20px 0px;
 `
 
 const GlobalStyle = createGlobalStyle`
   #tech-header {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 500;
     color: #181B21;
   }

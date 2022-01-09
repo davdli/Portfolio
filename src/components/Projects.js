@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
-import TagdDemo from '../assets/TagdHostDemo2.gif';
+import TagdDemo1 from '../assets/TagdHostDemo1.gif';
+import TagdDemo2 from '../assets/TagdHostDemo2.gif';
 import PeachStudioDemo from '../assets/PeachStudioDemo1.gif';
 import ForzaDemo from '../assets/ForzaDemo1.gif';
 import WhiteCloudDemo from '../assets/WhiteCloudDemo.gif';
@@ -19,16 +20,17 @@ const Projects = () => {
           </ProjectsTitle>
         </Fade>
         <ProjectsGroup>
-          <ProjectInfo>
+          <ProjectInfo style={{'margin-right': '75px'}}>
             <Fade bottom>
               <ProjectImg>
-              <img src={TagdDemo} alt='Tagd' id='tagd-img' />
+                <img src={TagdDemo1} alt='Tagd' id='tagd-img' />
+                <img src={TagdDemo2} alt='Tagd' id='tagd-img' />
               </ProjectImg>
             </Fade>
             <Fade bottom>
-              <ProjectText>
+              <ProjectText id='tagd-text'>
                 <h4 id='project-title'>Tagd</h4>
-                <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to to help their guests access and locate necessities in and around their property.</p>
+                <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to help their guests access and locate necessities in and around their property.</p>
                 <ButtonGroup>
                   <a href='https://github.com/davdli/Tagd_Frontend' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
                   <a href='https://github.com/davdli/Tagd_Backend' target="_blank" rel="noreferrer" className="live-link">Set Up</a>
@@ -99,7 +101,7 @@ export default Projects;
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 188vh;
+  height: 195vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -140,7 +142,8 @@ const ButtonGroup = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   #projects-header {
-    font-size: 28px;
+    margin-top: 40px;
+    font-size: 34px;
     font-weight: 500;
     color: #FFFFFF;
   }
@@ -149,26 +152,31 @@ const GlobalStyle = createGlobalStyle`
   }
   #project-title {
     color: white;
-    font: 20px;
+    font-size: 24px;
+    font-weight: 500;
     padding: 0px 0px 16px;
   }
   #project-description {
     color: #E2E4E4;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 400;
     padding: 0px 0px 16px;
     width: 30vw;
   }
   #tagd-img {
     width: 25%;
+    margin: 0px 5px;
   }
   #left-title {
     color: white;
-    font: 20px;
+    font-size: 24px;
+    font-weight: 500;
     padding: 0px 0px 16px 16px;
   }
   #left-description {
     color: #E2E4E4;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 400;
     padding: 0px 0px 16px 16px;
     width: 30vw;
   }
@@ -178,7 +186,7 @@ const GlobalStyle = createGlobalStyle`
   .github-link {
     font-weight: 500;
     color: #F5F5F5;
-    font-size: 12px;
+    font-size: 14px;
     height: 35px;
     width: 195px;
     background-color: transparent;
@@ -199,7 +207,7 @@ const GlobalStyle = createGlobalStyle`
   .live-link {
     font-weight: 500;
     color: #D0D1D2;
-    font-size: 12px;
+    font-size: 14px;
     height: 35px;
     width: 195px;
     background-color: transparent;

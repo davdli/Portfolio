@@ -15,7 +15,7 @@ const Landing = () => {
       <Fade bottom>
         <ItemText>
           <h1 id='landing-header1'>David Li</h1>
-          <h2 id='landing-header2'>Software Developer</h2>
+          <h2 id='landing-header2'>Software Engineer</h2>
         </ItemText>
       </Fade>
       <Buttons>
@@ -64,21 +64,25 @@ const Buttons = styled.div``
 
 const GlobalStyle = createGlobalStyle`
   #landing-header1 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 500;
+    color: #181B21;
+    margin-bottom: 10px;
   }
   #landing-header2 {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
+    color: #181B21;
   }
   #landing-img {
-    height: 40px;
+    height: 48px;
     overflow-x: hidden;
     animation: animateDown infinite 1.5s;
   }
   #resume-link {
     color: white;
-    font-size: 12;
+    font-size: 14;
+    font-weight: 500;
     background-color: #171A20CC;
     height: 40px;
     width: 256px;
@@ -92,7 +96,8 @@ const GlobalStyle = createGlobalStyle`
   }
   #contact-link {
     color: #393C41;
-    font-size: 12;
+    font-size: 14;
+    font-weight: 500;
     background-color: #FFFFFFA6;
     height: 40px;
     width: 256px;
