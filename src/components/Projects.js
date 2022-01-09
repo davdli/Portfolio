@@ -176,6 +176,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0px 0px 12px 12px;
   }
   .github-link {
+    font-weight: 500;
     color: #F5F5F5;
     font-size: 12px;
     height: 35px;
@@ -186,12 +187,17 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     border-radius: 100px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     border-color: #F5F5F5;
     cursor: pointer;
     margin: 5px;
   }
+  .github-link:hover {
+    color: #000;
+    background-color: #F5F5F5;
+  }
   .live-link {
+    font-weight: 500;
     color: #D0D1D2;
     font-size: 12px;
     height: 35px;
@@ -202,9 +208,13 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     border-radius: 100px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     border-color: #393C41;
     cursor: pointer;
     margin: 5px;
+  }
+  .live-link:hover {
+    color: #000;
+    background-color: #393C41;
   }
 `
