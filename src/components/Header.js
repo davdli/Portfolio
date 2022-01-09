@@ -45,9 +45,9 @@ const Header = () => {
         <li><a href="#projects" onClick={() => setBurgerStatus(false)}>Projects</a></li>
         <li><a href="#technologies" onClick={() => setBurgerStatus(false)}>Technologies</a></li>
         <li><a href="#contact" onClick={() => setBurgerStatus(false)}>Contact</a></li>
+        <li><a href={resume} target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>Resume</a></li>
         <li><a href="https://github.com/davdli" target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/davdli/" target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>LinkedIn</a></li>
-        <li><a href={resume} target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>Resume</a></li>
       </BurgerNav>
     </Container>
   )
@@ -71,12 +71,12 @@ const Container = styled.div`
 const LeftIcons = styled.div`
   .devicon-github-original {
     font-size: 36px;
-    color: #393c41;
+    color: #181B21;
     margin: 0px 10px 0px 10px;
   }
   .devicon-linkedin-plain {
     font-size: 36px;
-    color: #393c41;
+    color: #181B21;
     margin: 0px 10px 0px 10px;
   }
 `
@@ -109,6 +109,8 @@ const RightMenu = styled.div`
 
 const CustomMenu = styled(MenuRoundedIcon)`
   cursor: pointer;
+  transform: scale(1);
+  margin-right: 10px;
 `
 
 const BurgerNav = styled.div`
@@ -132,6 +134,7 @@ const BurgerNav = styled.div`
     margin: 0px 15px 15px 15px;
     a {
       font-weight: 500;
+      font-size: 17px;
       color: #393C41;
       padding: 0px 15px;
     }
@@ -154,19 +157,24 @@ const CloseWrapper = styled.div`
   margin-bottom: 40px;
   margin-top: 10px;
   div {
-    padding: 2px 4px;
+    padding: 2px 4px 1px 4px;
   }
   div: hover {
     background-color: #0000000D;
     border-radius: 48px;
-    padding: 2px 4px;
+    padding: 2px 4px 1px 4px;
   }
 `
 
 const GlobalStyle = createGlobalStyle`
+  .nav-link {
+    color: #181B21;
+    font-size: 17px;
+    font-weight: 500;
+  }
   .nav-link: hover {
     background-color: #0000000D;
     border-radius: 8px;
     padding: 6px 16px;
-}
+  }
 `

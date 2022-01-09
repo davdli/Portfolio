@@ -28,7 +28,7 @@ const Projects = () => {
             <Fade bottom>
               <ProjectText>
                 <h4 id='project-title'>Tagd</h4>
-                <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to to help their guests access and locate necessities in and around their property.</p>
+                <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to help their guests access and locate necessities in and around their property.</p>
                 <ButtonGroup>
                   <a href='https://github.com/davdli/Tagd_Frontend' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
                   <a href='https://github.com/davdli/Tagd_Backend' target="_blank" rel="noreferrer" className="live-link">Set Up</a>
@@ -140,7 +140,7 @@ const ButtonGroup = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   #projects-header {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 500;
     color: #FFFFFF;
   }
@@ -149,12 +149,14 @@ const GlobalStyle = createGlobalStyle`
   }
   #project-title {
     color: white;
-    font: 20px;
+    font-size: 24px;
+    font-weight: 500;
     padding: 0px 0px 16px;
   }
   #project-description {
     color: #E2E4E4;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 400;
     padding: 0px 0px 16px;
     width: 30vw;
   }
@@ -163,12 +165,14 @@ const GlobalStyle = createGlobalStyle`
   }
   #left-title {
     color: white;
-    font: 20px;
+    font-size: 24px;
+    font-weight: 500;
     padding: 0px 0px 16px 16px;
   }
   #left-description {
     color: #E2E4E4;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 400;
     padding: 0px 0px 16px 16px;
     width: 30vw;
   }
@@ -178,7 +182,7 @@ const GlobalStyle = createGlobalStyle`
   .github-link {
     font-weight: 500;
     color: #F5F5F5;
-    font-size: 12px;
+    font-size: 14px;
     height: 35px;
     width: 195px;
     background-color: transparent;
@@ -199,7 +203,7 @@ const GlobalStyle = createGlobalStyle`
   .live-link {
     font-weight: 500;
     color: #D0D1D2;
-    font-size: 12px;
+    font-size: 14px;
     height: 35px;
     width: 195px;
     background-color: transparent;

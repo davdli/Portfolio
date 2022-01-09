@@ -14,26 +14,30 @@ const AboutMe = () => {
             <h2 id='about-header'>About Me</h2>
           </TitleText>
         </Fade>
-        <AboutGroup>
-          <AboutImg>
-            <img src={ProfilePicture} alt='profile' id='about-img' />
-          </AboutImg>
-          <AboutText>
-            <p id='about-text'>Hi, I'm David and a software developer from New York City!
-              Growing up, I kept seeing the amazing things that were being built using programming.
-              I wanted to learn how to build things that would mean something to me and could solve a problem.
-              Now it has also become a tool for me to express the creative and analytical qualities in myself.
-            </p>
-            <br />
-            <p id='about-text'>I am a recent graduate of Binghamton University with a degree in economics and Fullstack Academy with a certification in full-stack web development.
-              Over the past year, I have been building applications using JavaScript, Node.js, React, Express, PostgreSQL, and other technologies.
-              As the nature of technology continues to evolve, I strive to expand my skillset and keep up with new languages and frameworks.
-            </p>
-            <br />
-            <p id='about-text'>My goal is to be in the forefront of innovation and contribute to tackling the problems we have in our society.
-              I hope to continue to work on projects that can be impactful and produce code that has a postive change.</p>
-          </AboutText>
-        </AboutGroup>
+        <Fade clear>
+          <AboutGroup>
+            <AboutImg>
+              <img src={ProfilePicture} alt='profile' id='about-img' />
+            </AboutImg>
+            <AboutText>
+              <p id='about-text'>Hi, I'm David and a software engineer from New York City!
+                Growing up, I kept seeing the amazing things that were being built using programming.
+                I wanted to learn how to build things that would mean something to me and could solve a problem.
+                Now it has also become a tool to express the creative and analytical qualities in myself.
+              </p>
+              <br />
+              <p id='about-text'>I am a recent graduate of Binghamton University with a degree in economics and Fullstack Academy with a certification in full-stack web development.
+                Over the past year, I have been working on applications focusing on continuous improvement when it comes to design, functionality, and growth.
+                Although I'm confident in my knowledge and abilities, I know there is always more to learn.
+              </p>
+              <br />
+              <p id='about-text'>My goal is to be in the forefront of innovation and contribute to tackling the problems we have in our society.
+                I hope to continue to work on projects that can be impactful and produce code that has a postive change.
+                In my free time, I enjoy weightlifting, learning the piano, and snowboarding!
+              </p>
+            </AboutText>
+          </AboutGroup>
+        </Fade>
       </Wrap>
     </div>
   )
@@ -61,19 +65,22 @@ const AboutGroup = styled.div`
 `
 const AboutImg = styled.div``
 
-const AboutText = styled.div``
+const AboutText = styled.div`
+  text-align: left;
+`
 
 const GlobalStyle = createGlobalStyle`
   #about-header {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 500;
     color: #FFFFFF;
   }
   #about-text {
     color: #E2E4E4;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 400;
     margin-left: 130px;
-    width: 40vw;
+    width: 50vw;
   }
   #about-img {
     height: 500px;
