@@ -36,7 +36,9 @@ const Header = () => {
       </Fade>
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
-          <CustomClose onClick={() => setBurgerStatus(false)}/>
+          <div>
+            <CustomClose onClick={() => setBurgerStatus(false)}/>
+          </div>
         </CloseWrapper>
         <li><a href="#landing" onClick={() => setBurgerStatus(false)}>Home</a></li>
         <li><a href="#about" onClick={() => setBurgerStatus(false)}>About</a></li>
@@ -136,13 +138,14 @@ const BurgerNav = styled.div`
   }
   li: hover {
     background-color: #0000000D;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 6px 0px;
 }
 `
 
 const CustomClose = styled(CloseIcon)`
   cursor: pointer;
+  transform: scale(.8);
 `
 
 const CloseWrapper = styled.div`
@@ -150,12 +153,20 @@ const CloseWrapper = styled.div`
   justify-content: flex-end;
   margin-bottom: 40px;
   margin-top: 10px;
+  div {
+    padding: 2px 4px;
+  }
+  div: hover {
+    background-color: #0000000D;
+    border-radius: 48px;
+    padding: 2px 4px;
+  }
 `
 
 const GlobalStyle = createGlobalStyle`
   .nav-link: hover {
     background-color: #0000000D;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 6px 16px;
 }
 `
