@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import resume from '../assets/Resume.pdf';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
+  const [burgerStatus, setBurgerStatus] = useState(false);
+
   return (
     <Container>
       <GlobalStyle />
@@ -20,24 +23,27 @@ const Header = () => {
           </a>
         </LeftIcons>
         <Menu>
-          {/* <a href="#landing">Home</a> */}
           <Link to="landing" href="#" smooth={true} duration={1000}>Home</Link>
-          {/* <a href="#about">About</a> */}
           <Link to="about" href="#" smooth={true} duration={1000}>About</Link>
-          {/* <a href="#projects">Projects</a> */}
           <Link to="projects" href="#" smooth={true} duration={2000}>Projects</Link>
-          {/* <a href="#technologies">Technologies</a> */}
           <Link to="technologies" href="#" smooth={true} duration={3000}>Technologies</Link>
-          {/* <a href="#">Technologies</a> */}
-          <Link to="technologies" href="#" smooth={true} duration={3000}>Technologies</Link>
-          {/* <a href="#contact">Contact</a> */}
           <Link to="contact" href="#" smooth={true} duration={4000}>Contact</Link>
         </Menu>
         <RightMenu>
           <a href={resume} target="_blank" rel="noreferrer">Resume</a>
-          <CustomMenu />
+          <CustomMenu onClick={() => setBurgerStatus(true)}/>
         </RightMenu>
       </Fade>
+      <BurgerNav show={burgerStatus}>
+        <CloseWrapper>
+          <CustomClose onClick={() => setBurgerStatus(false)}/>
+        </CloseWrapper>
+        <li><a href="#landing" onClick={() => setBurgerStatus(false)}>Home</a></li>
+        <li><a href="#about" onClick={() => setBurgerStatus(false)}>About</a></li>
+        <li><a href="#projects" onClick={() => setBurgerStatus(false)}>Projects</a></li>
+        <li><a href="#technologies" onClick={() => setBurgerStatus(false)}>Technologies</a></li>
+        <li><a href="#contact" onClick={() => setBurgerStatus(false)}>Contact</a></li>
+      </BurgerNav>
     </Container>
   )
 }
@@ -45,6 +51,7 @@ const Header = () => {
 export default Header;
 
 const Container = styled.div`
+  z-index: 1;
   min-height: 60px;
   position: absolute;
   display: flex;
@@ -97,6 +104,39 @@ const RightMenu = styled.div`
 
 const CustomMenu = styled(MenuRoundedIcon)`
   cursor: pointer;
+`
+
+const BurgerNav = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 300px;
+  height: 100vh;
+  z-index: 16;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.5s;
+  li {
+    padding: 15px 0px;
+    a {
+      font-weight: 500;
+    }
+  }
+`
+
+const CustomClose = styled(CloseIcon)`
+  cursor: pointer;
+`
+
+const CloseWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `
 
 const GlobalStyle = createGlobalStyle`
