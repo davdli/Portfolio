@@ -23,17 +23,10 @@ const Header = () => {
           </a>
         </LeftIcons>
         <Menu>
-          {/* <a href="#landing">Home</a> */}
           <Link to="landing" href="#" smooth={true} duration={1000}>Home</Link>
-          {/* <a href="#about">About</a> */}
           <Link to="about" href="#" smooth={true} duration={1000}>About</Link>
-          {/* <a href="#projects">Projects</a> */}
           <Link to="projects" href="#" smooth={true} duration={2000}>Projects</Link>
-          {/* <a href="#technologies">Technologies</a> */}
           <Link to="technologies" href="#" smooth={true} duration={3000}>Technologies</Link>
-          {/* <a href="#">Technologies</a> */}
-          <Link to="technologies" href="#" smooth={true} duration={3000}>Technologies</Link>
-          {/* <a href="#contact">Contact</a> */}
           <Link to="contact" href="#" smooth={true} duration={4000}>Contact</Link>
         </Menu>
         <RightMenu>
@@ -45,11 +38,11 @@ const Header = () => {
         <CloseWrapper>
           <CustomClose onClick={() => setBurgerStatus(false)}/>
         </CloseWrapper>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#landing" onClick={() => setBurgerStatus(false)}>Home</a></li>
+        <li><a href="#about" onClick={() => setBurgerStatus(false)}>About</a></li>
+        <li><a href="#projects" onClick={() => setBurgerStatus(false)}>Projects</a></li>
+        <li><a href="#technologies" onClick={() => setBurgerStatus(false)}>Technologies</a></li>
+        <li><a href="#contact" onClick={() => setBurgerStatus(false)}>Contact</a></li>
       </BurgerNav>
     </Container>
   )
@@ -128,6 +121,7 @@ const BurgerNav = styled.div`
   flex-direction: column;
   text-align: start;
   transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.5s;
   li {
     padding: 15px 0px;
     a {
