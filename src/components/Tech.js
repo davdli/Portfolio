@@ -11,25 +11,25 @@ const Tech = () => {
           <h2 id='tech-header'>Technologies</h2>
         </TitleText>
         <TechGroup>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 JavaScript
               </TechName>
               <i class="devicon-javascript-plain colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 HTML5
               </TechName>
               <i class="devicon-html5-plain colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 CSS3
               </TechName>
               <i class="devicon-css3-plain colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Python
               </TechName>
@@ -38,25 +38,25 @@ const Tech = () => {
         </TechGroup>
 
         <TechGroup>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Node.js
               </TechName>
               <i class="devicon-nodejs-plain colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 React
               </TechName>
               <i class="devicon-react-original colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Express
               </TechName>
               <i class="devicon-express-original colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 PostgreSQL
               </TechName>
@@ -65,25 +65,25 @@ const Tech = () => {
         </TechGroup>
 
         <TechGroup>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Sequelize
               </TechName>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" class="devicon-sequelize-plain" alt="sequelize"/>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Redux
               </TechName>
               <i class="devicon-redux-original colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Material UI
               </TechName>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" class="devicon-materialui-plain" alt="materialui" />
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Firebase
               </TechName>
@@ -92,25 +92,25 @@ const Tech = () => {
         </TechGroup>
 
         <TechGroup>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Heroku
               </TechName>
               <i class="devicon-heroku-plain colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Git
               </TechName>
               <i class="devicon-git-plain colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Mocha
               </TechName>
               <i class="devicon-mocha-plain colored"></i>
           </TechIcon>
-          <TechIcon>
+          <TechIcon className='tech-icon'>
               <TechName>
                 Figma
               </TechName>
@@ -144,7 +144,7 @@ const TechGroup = styled.div`
 `
 
 const TechIcon = styled.div`
-border-top: 3px solid #393C41;
+border-top: 3px solid #5C5D61;
 height: 140px;
 width: 190px;
 margin: 0px 20px 0px 20px;
@@ -152,6 +152,7 @@ padding: 20px 20px 20px;
 `
 
 const TechName = styled.div`
+  color: #5C5D61;
   padding: 0px 0px 20px 0px;
 `
 
@@ -208,5 +209,8 @@ const GlobalStyle = createGlobalStyle`
   }
   .devicon-figma {
     height: 56px;
+  }
+  .tech-icon: hover {
+    border: 3px solid #000;
   }
 `
