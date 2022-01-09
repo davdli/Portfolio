@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
-import TagdDemo from '../assets/TagdHostDemo2.gif';
+import TagdDemo1 from '../assets/TagdHostDemo1.gif';
+import TagdDemo2 from '../assets/TagdHostDemo2.gif';
 import PeachStudioDemo from '../assets/PeachStudioDemo1.gif';
 import ForzaDemo from '../assets/ForzaDemo1.gif';
 import WhiteCloudDemo from '../assets/WhiteCloudDemo.gif';
@@ -19,14 +20,15 @@ const Projects = () => {
           </ProjectsTitle>
         </Fade>
         <ProjectsGroup>
-          <ProjectInfo>
+          <ProjectInfo style={{'margin-right': '75px'}}>
             <Fade bottom>
               <ProjectImg>
-              <img src={TagdDemo} alt='Tagd' id='tagd-img' />
+                <img src={TagdDemo1} alt='Tagd' id='tagd-img' />
+                <img src={TagdDemo2} alt='Tagd' id='tagd-img' />
               </ProjectImg>
             </Fade>
             <Fade bottom>
-              <ProjectText>
+              <ProjectText id='tagd-text'>
                 <h4 id='project-title'>Tagd</h4>
                 <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to help their guests access and locate necessities in and around their property.</p>
                 <ButtonGroup>
@@ -99,7 +101,7 @@ export default Projects;
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 188vh;
+  height: 195vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -140,6 +142,7 @@ const ButtonGroup = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   #projects-header {
+    margin-top: 40px;
     font-size: 34px;
     font-weight: 500;
     color: #FFFFFF;
@@ -162,6 +165,7 @@ const GlobalStyle = createGlobalStyle`
   }
   #tagd-img {
     width: 25%;
+    margin: 0px 5px;
   }
   #left-title {
     color: white;

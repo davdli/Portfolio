@@ -47,7 +47,7 @@ export default AboutMe;
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 98vh;
+  height: 95vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -79,12 +79,12 @@ const GlobalStyle = createGlobalStyle`
     color: #E2E4E4;
     font-size: 17px;
     font-weight: 400;
-    margin-left: 130px;
+    margin-left: 65px;
     width: 50vw;
   }
   #about-img {
     height: 500px;
     width: 250px;
-    margin-right: 130px;
+    margin-right: 65px;
   }
 `
