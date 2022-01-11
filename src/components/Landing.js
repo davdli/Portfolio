@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 10px;
   }
   #landing-header2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #181B21;
   }
@@ -81,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
   }
   #resume-link {
     color: white;
-    font-size: 14;
+    font-size: 16;
     font-weight: 500;
     background-color: #171A20CC;
     height: 40px;
@@ -96,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
   }
   #contact-link {
     color: #393C41;
-    font-size: 14;
+    font-size: 16;
     font-weight: 500;
     background-color: #FFFFFFA6;
     height: 40px;

@@ -37,13 +37,13 @@ const Wrap = styled.div`
 `
 
 const TitleText = styled.div`
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 500;
   color: #171A20;
 `
 
 const ContactText = styled.div`
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400px;
   color: #393C41;
   margin-top: 5px;

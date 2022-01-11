@@ -28,7 +28,7 @@ const Projects = () => {
               </ProjectImg>
             </Fade>
             <Fade bottom>
-              <ProjectText id='tagd-text'>
+              <ProjectText>
                 <h4 id='project-title'>Tagd</h4>
                 <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to help their guests access and locate necessities in and around their property.</p>
                 <ButtonGroup>
@@ -115,6 +115,7 @@ const ProjectsGroup = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 85px;
+  margin-right: 20px;
 `
 
 const ProjectInfo = styled.div`
@@ -143,7 +144,7 @@ const ButtonGroup = styled.div`
 const GlobalStyle = createGlobalStyle`
   #projects-header {
     margin-top: 40px;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 500;
     color: #FFFFFF;
   }
@@ -152,13 +153,13 @@ const GlobalStyle = createGlobalStyle`
   }
   #project-title {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     padding: 0px 0px 16px;
   }
   #project-description {
     color: #E2E4E4;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     padding: 0px 0px 16px;
     width: 30vw;
@@ -169,13 +170,13 @@ const GlobalStyle = createGlobalStyle`
   }
   #left-title {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     padding: 0px 0px 16px 16px;
   }
   #left-description {
     color: #E2E4E4;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     padding: 0px 0px 16px 16px;
     width: 30vw;
