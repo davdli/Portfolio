@@ -134,7 +134,7 @@ const BurgerNav = styled.div`
     margin: 0px 15px 15px 15px;
     a {
       font-weight: 500;
-      font-size: 17px;
+      font-size: 16px;
       color: #393C41;
       padding: 0px 15px;
     }
@@ -169,7 +169,7 @@ const CloseWrapper = styled.div`
 const GlobalStyle = createGlobalStyle`
   .nav-link {
     color: #181B21;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
   }
   .nav-link: hover {
