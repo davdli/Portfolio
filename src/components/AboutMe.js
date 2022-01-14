@@ -33,7 +33,7 @@ const AboutMe = () => {
               <br />
               <p id='about-text'>My goal is to be in the forefront of innovation and contribute to tackling the problems we have in our society.
                 I hope to continue to work on projects that can be impactful and produce code that has a postive change.
-                In my free time, I enjoy weightlifting, learning the piano, snowboarding, and fishing!
+                In my free time, I enjoy weightlifting, learning the piano, snowboarding, basketball, and fishing!
               </p>
             </AboutText>
           </AboutGroup>

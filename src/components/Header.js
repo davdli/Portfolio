@@ -4,7 +4,7 @@ import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import resume from '../assets/Resume.pdf';
+import resume from '../assets/David_Li_Resume.pdf';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
@@ -86,7 +86,7 @@ const Menu = styled.div`
   align-items: center;
   justify-content: center;
   flex: 1;
-  margin-left: 50px;
+  margin-left: 40px;
   a {
     font-weight: 500;
     padding: 0 16px;
