@@ -117,15 +117,15 @@ const Tech = () => {
             </TechIcon>
             <TechIcon className='tech-icon'>
                 <TechName>
-                  Mocha
+                  Jasmine
                 </TechName>
-                <i class="devicon-mocha-plain colored"></i>
+                <i class="devicon-jasmine-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
                 <TechName>
-                  Figma
+                  Mocha
                 </TechName>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt='figma' class='devicon-figma'/>
+                <i class="devicon-mocha-plain colored"></i>
             </TechIcon>
           </TechGroup>
         </Fade>
@@ -221,8 +221,8 @@ const GlobalStyle = createGlobalStyle`
   .devicon-mocha-plain {
     font-size: 56px;
   }
-  .devicon-figma {
-    height: 56px;
+  .devicon-jasmine-plain {
+    font-size: 56px;
   }
   .tech-icon: hover {
     border: 3px solid #000;

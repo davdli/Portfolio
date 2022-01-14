@@ -5,7 +5,7 @@ import IcelandImage from '../assets/Iceland.jpeg';
 import DownArrow from '../assets/down-arrow.svg';
 import Header from './Header';
 import Fade from 'react-reveal/Fade';
-import resume from '../assets/Resume.pdf';
+import resume from '../assets/David_Li_Resume.pdf';
 
 const Landing = () => {
   return (
