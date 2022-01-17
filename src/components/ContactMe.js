@@ -17,7 +17,10 @@ const ContactMe = () => {
           <ContactText>
             Interested in working together or have any questions?
           </ContactText>
-          <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">CONTACT ME</a>
+          <ContactButtons>
+            <p id="email-link">(516) 279-8658</p>
+            <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">davdli2323@gmail.com</a>
+          </ContactButtons>
         </Fade>
       </Wrap>
     </div>
@@ -49,6 +52,10 @@ const ContactText = styled.div`
   margin-top: 5px;
 `
 
+const ContactButtons = styled.div`
+  display: flex;
+`
+
 const GlobalStyle = createGlobalStyle`
   #email-link {
     color: #000000;
@@ -66,6 +73,8 @@ const GlobalStyle = createGlobalStyle`
     border-color: #000000;
     cursor: pointer;
     margin-top: 15px;
+    margin: 10px;
+
   }
   #email-link: hover {
     color: #F4F4F4;

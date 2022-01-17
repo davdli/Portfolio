@@ -50,6 +50,7 @@ const Wrap = styled.div`
 const ItemText = styled.div`
   padding-top: 30vh;
   text-align: center;
+  justify-content: center;
 `
 
 const ButtonGroup = styled.div`

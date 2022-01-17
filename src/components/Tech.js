@@ -156,11 +156,11 @@ const TechGroup = styled.div`
 `
 
 const TechIcon = styled.div`
-border-top: 3px solid #5C5D61;
-height: 140px;
-width: 190px;
-margin: 0px 20px 0px 20px;
-padding: 20px 20px 20px;
+  border-top: 3px solid #5C5D61;
+  height: 140px;
+  width: 190px;
+  margin: 0px 20px 0px 20px;
+  padding: 20px 20px 20px;
 `
 
 const TechName = styled.div`
