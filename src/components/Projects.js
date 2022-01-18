@@ -105,6 +105,9 @@ const Wrap = styled.div`
   background-color: #000;
   display: flex;
   flex-direction: column;
+  @media (max-width: 390px) {
+    height: 225vh;
+  }
 `
 
 const ProjectsTitle = styled.div``
@@ -123,6 +126,9 @@ const ProjectInfo = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 390px) {
+    flex-direction: column;
+  }
 `
 
 const ProjectImg = styled.div`
@@ -136,7 +142,7 @@ const ProjectText = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
-  @media (max-width: 768px) {
+  @media (max-width: 390px) {
     flex-direction: column;
   }
 `

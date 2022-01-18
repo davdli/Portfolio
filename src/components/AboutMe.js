@@ -51,6 +51,9 @@ const Wrap = styled.div`
   background-color: #000;
   display: flex;
   flex-direction: column;
+  @media (max-width: 390px) {
+    height: 120vh;
+  }
 `
 
 const TitleText = styled.div`
@@ -62,6 +65,9 @@ const AboutGroup = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 85px;
+  @media (max-width: 390px) {
+    flex-direction: column;
+  }
 `
 const AboutImg = styled.div`
 `
@@ -70,6 +76,9 @@ const AboutText = styled.div`
   text-align: left;
   justify-content: center;
   align-items: center;
+  @media (max-width: 390px) {
+    margin-top: 80px;
+  }
 `
 
 const GlobalStyle = createGlobalStyle`
@@ -84,6 +93,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     width: 50vw;
     margin-right: 70px;
+    @media (max-width: 390px) {
+      width: 80%;
+      margin-left: 40px;
+    }
   }
   #about-img {
     width: 65%;

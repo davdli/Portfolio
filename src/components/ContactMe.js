@@ -54,6 +54,9 @@ const ContactText = styled.div`
 
 const ContactButtons = styled.div`
   display: flex;
+  @media (max-width: 390px) {
+    flex-direction: column;
+  }
 `
 
 const GlobalStyle = createGlobalStyle`
