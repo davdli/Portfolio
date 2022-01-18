@@ -100,14 +100,11 @@ const Projects = () => {
 export default Projects;
 
 const Wrap = styled.div`
-  width: 100vw;
-  height: 195vh;
+  width: 100%;
+  height: 100%;
   background-color: #000;
   display: flex;
   flex-direction: column;
-  @media (max-width: 390px) {
-    height: 225vh;
-  }
 `
 
 const ProjectsTitle = styled.div``
@@ -119,6 +116,7 @@ const ProjectsGroup = styled.div`
   align-items: center;
   margin-top: 85px;
   margin-right: 20px;
+  margin-bottom: 70px;
 `
 
 const ProjectInfo = styled.div`
@@ -126,7 +124,7 @@ const ProjectInfo = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @media (max-width: 390px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `
@@ -142,14 +140,14 @@ const ProjectText = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
-  @media (max-width: 390px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `
 
 const GlobalStyle = createGlobalStyle`
   #projects-header {
-    margin-top: 40px;
+    margin-top: 70px;
     font-size: 32px;
     font-weight: 500;
     color: #FFFFFF;

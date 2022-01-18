@@ -38,8 +38,8 @@ const Footer = () => {
 export default Footer;
 
 const Wrap = styled.div`
-  width: 100vw;
-  height: 20vh;
+  width: 100%;
+  height: 25vh;
   background-color: #393C41;
   display: flex;
   flex-direction: column;

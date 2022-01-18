@@ -137,18 +137,16 @@ const Tech = () => {
 export default Tech;
 
 const Wrap = styled.div`
-  width: 100vw;
-  height: 130vh;
+  width: 100%;
+  height: 100%;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  @media (max-width: 390px) {
-    height: 120vh;
-  }
+  margin-bottom: 50px;
 `
 
 const TitleText = styled.div`
-  margin-top: 40px;
+  margin-top: 35px;
 `
 const TechGroup = styled.div`
   margin-top: 85px;
@@ -164,8 +162,8 @@ const TechIcon = styled.div`
   width: 190px;
   margin: 0px 20px 0px 20px;
   padding: 20px 20px 20px;
-  @media (max-width: 390px) {
-    margin: 0px 1px 0px 1px;
+  @media (max-width: 768px) {
+    margin: 0px;
   }
 `
 

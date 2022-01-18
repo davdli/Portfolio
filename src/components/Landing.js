@@ -36,7 +36,7 @@ const Landing = () => {
 export default Landing;
 
 const Wrap = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -56,7 +56,7 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
-  @media (max-width: 390px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `
