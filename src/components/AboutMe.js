@@ -46,18 +46,15 @@ const AboutMe = () => {
 export default AboutMe;
 
 const Wrap = styled.div`
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
   background-color: #000;
   display: flex;
   flex-direction: column;
-  @media (max-width: 390px) {
-    height: 120vh;
-  }
 `
 
 const TitleText = styled.div`
-  margin-top: 40px;
+  margin-top: 35px;
 `
 
 const AboutGroup = styled.div`
@@ -65,7 +62,7 @@ const AboutGroup = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 85px;
-  @media (max-width: 390px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `
@@ -76,7 +73,7 @@ const AboutText = styled.div`
   text-align: left;
   justify-content: center;
   align-items: center;
-  @media (max-width: 390px) {
+  @media (max-width: 768px) {
     margin-top: 80px;
   }
 `
@@ -93,7 +90,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     width: 50vw;
     margin-right: 70px;
-    @media (max-width: 390px) {
+    @media (max-width: 768px) {
       width: 80%;
       margin-left: 40px;
     }

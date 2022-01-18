@@ -17,10 +17,7 @@ const ContactMe = () => {
           <ContactText>
             Interested in working together or have any questions?
           </ContactText>
-          <ContactButtons>
-            <p id="email-link">(516) 279-8658</p>
-            <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">davdli2323@gmail.com</a>
-          </ContactButtons>
+          <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">CONTACT ME</a>
         </Fade>
       </Wrap>
     </div>
@@ -30,7 +27,7 @@ const ContactMe = () => {
 export default ContactMe;
 
 const Wrap = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 30vh;
   background-color: #F4F4F4;
   display: flex;
@@ -50,13 +47,6 @@ const ContactText = styled.div`
   font-weight: 400px;
   color: #393C41;
   margin-top: 5px;
-`
-
-const ContactButtons = styled.div`
-  display: flex;
-  @media (max-width: 390px) {
-    flex-direction: column;
-  }
 `
 
 const GlobalStyle = createGlobalStyle`
