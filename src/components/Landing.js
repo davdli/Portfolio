@@ -50,12 +50,13 @@ const Wrap = styled.div`
 const ItemText = styled.div`
   padding-top: 30vh;
   text-align: center;
+  justify-content: center;
 `
 
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
-  @media (max-width: 768px) {
+  @media (max-width: 390px) {
     flex-direction: column;
   }
 `

@@ -94,5 +94,8 @@ const GlobalStyle = createGlobalStyle`
     color: #F4F4F4;
     font-size: 14px;
     margin: 0px 10px 0px 10px;
+    @media (max-width: 390px) {
+      margin: 0px 5px 0px 5px;
+    }
   }
 `

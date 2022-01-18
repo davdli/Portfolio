@@ -142,6 +142,9 @@ const Wrap = styled.div`
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
+  @media (max-width: 390px) {
+    height: 120vh;
+  }
 `
 
 const TitleText = styled.div`
@@ -156,11 +159,14 @@ const TechGroup = styled.div`
 `
 
 const TechIcon = styled.div`
-border-top: 3px solid #5C5D61;
-height: 140px;
-width: 190px;
-margin: 0px 20px 0px 20px;
-padding: 20px 20px 20px;
+  border-top: 3px solid #5C5D61;
+  height: 140px;
+  width: 190px;
+  margin: 0px 20px 0px 20px;
+  padding: 20px 20px 20px;
+  @media (max-width: 390px) {
+    margin: 0px 1px 0px 1px;
+  }
 `
 
 const TechName = styled.div`

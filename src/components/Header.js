@@ -61,6 +61,7 @@ const Container = styled.div`
   position: absolute;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   padding: 0 20px;
   top: 0;
