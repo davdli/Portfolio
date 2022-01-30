@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.cd6cdc35.css",
-    "main.js": "/static/js/main.baf150b1.js",
+    "main.js": "/static/js/main.08fab5b4.js",
     "static/media/TagdHostDemo2.gif": "/static/media/TagdHostDemo2.174c16d10715ebba3b65.gif",
     "static/media/TagdHostDemo1.gif": "/static/media/TagdHostDemo1.3fb04b61460dbf2bb7f7.gif",
-    "static/media/PeachStudioDemo1.gif": "/static/media/PeachStudioDemo1.dc927f97e2f38338c0a4.gif",
     "static/media/ForzaDemo1.gif": "/static/media/ForzaDemo1.874365eb72493d69f1dd.gif",
+    "static/media/PeachStudioDemo2.gif": "/static/media/PeachStudioDemo2.ea18b6055d13c30f1067.gif",
     "static/media/Profile-Picture.jpg": "/static/media/Profile-Picture.90bc5b1720a2dd2aca81.jpg",
     "static/media/WhiteCloudDemo.gif": "/static/media/WhiteCloudDemo.7d6730214b1a6996dcfa.gif",
     "static/media/Iceland.jpeg": "/static/media/Iceland.ef954ae5d3c9da2e9799.jpeg",
-    "static/media/David_Li_Resume.pdf": "/static/media/David_Li_Resume.0ac558735f7920c6603d.pdf",
+    "static/media/David_Li_Resume.pdf": "/static/media/David_Li_Resume.447b6a032f3638846268.pdf",
     "static/media/logo.svg": "/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.9b52668fb01a76a29986dae3032abd3f.svg",
     "main.cd6cdc35.css.map": "/static/css/main.cd6cdc35.css.map",
-    "main.baf150b1.js.map": "/static/js/main.baf150b1.js.map"
+    "main.08fab5b4.js.map": "/static/js/main.08fab5b4.js.map"
   },
   "entrypoints": [
     "static/css/main.cd6cdc35.css",
-    "static/js/main.baf150b1.js"
+    "static/js/main.08fab5b4.js"
   ]
 }
