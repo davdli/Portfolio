@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import TagdDemo1 from '../assets/TagdHostDemo1.gif';
 import TagdDemo2 from '../assets/TagdHostDemo2.gif';
-import PeachStudioDemo from '../assets/PeachStudioDemo1.gif';
+import PeachStudioDemo from '../assets/PeachStudioDemo2.gif';
 import ForzaDemo from '../assets/ForzaDemo1.gif';
 import WhiteCloudDemo from '../assets/WhiteCloudDemo.gif';
 import Fade from 'react-reveal/Fade';
@@ -81,7 +81,8 @@ const Projects = () => {
                 <h4 id='left-title'>White Cloud</h4>
                 <p id='left-description'>Platform that will provide users the opportunity to discover music and learn and play the piano instantly.</p>
                 <ButtonGroup id='left-button'>
-                  <a href='https://github.com/davdli/White_Cloud' target="_blank" rel="noreferrer" className="github-link">Coming Soon</a>
+                  <a href='https://github.com/davdli/White_Cloud' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
+                  <a href='#' className="live-link">Coming Soon</a>
                 </ButtonGroup>
               </ProjectText>
             </Fade>
