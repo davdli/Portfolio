@@ -26,14 +26,14 @@ const AboutMe = () => {
                 Now it has also become a tool to express the creative and analytical qualities in myself.
               </p>
               <br />
-              <p id='about-text'>I am a recent graduate of Binghamton University with a degree in economics and Fullstack Academy with a certificate in full-stack web development.
+              <p id='about-text'>I am a graduate of Fullstack Academy with a certificate in full-stack web development and Binghamton University with a degree in economics.
                 Over the past year, I have been working on applications focusing on continuous improvement when it comes to design, functionality, and growth.
                 Although I'm confident in my knowledge and abilities, I know there is always more to learn.
               </p>
               <br />
               <p id='about-text'>My goal is to be in the forefront of innovation and contribute to tackling the problems we have in our society.
-                I hope to continue to work on projects that can be impactful and produce code that has a postive change.
-                In my free time, I enjoy weightlifting, learning the piano, snowboarding, basketball, and fishing!
+                I hope to continue to work on projects that can be impactful and produce code that has a positive change.
+                In my free time, I enjoy weightlifting, playing the piano, snowboarding, basketball, and fishing!
               </p>
             </AboutText>
           </AboutGroup>
