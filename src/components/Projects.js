@@ -30,7 +30,7 @@ const Projects = () => {
             <Fade bottom>
               <ProjectText>
                 <h4 id='project-title'>Tagd</h4>
-                <p id='project-description'>Augmented reality mobile application targeted for Airbnb hosts to help their guests access and locate necessities in and around their property.</p>
+                <p id='project-description'>AR mobile application that lets hosts display shared messages, helping guests access and locate necessities in the property.</p>
                 <ButtonGroup>
                   <a href='https://github.com/davdli/Tagd_Frontend' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
                   <a href='https://github.com/davdli/Tagd_Backend' target="_blank" rel="noreferrer" className="live-link">Set Up</a>
@@ -43,7 +43,7 @@ const Projects = () => {
             <Fade bottom>
               <ProjectText>
                 <h4 id='left-title'>Peach Studio</h4>
-                <p id='left-description'>An e-commerce website specializing in furniture to make your home .... sweet home.</p>
+                <p id='left-description'>E-commerce website for you to find stylish furiniture, making your home .... sweet home.</p>
                 <ButtonGroup id='left-button'>
                   <a href='https://github.com/davdli/Peach_Studio' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
                   <a href='http://peach-studio.herokuapp.com/' target="_blank" rel="noreferrer" className="live-link">Live</a>
@@ -66,7 +66,7 @@ const Projects = () => {
             <Fade bottom>
               <ProjectText>
                 <h4 id='project-title'>Forza</h4>
-                <p id='project-description'>Mobile and web application where users can track their strength progress at the gym using speech recognition.</p>
+                <p id='project-description'>Web application helping people track their strength progression at the gym with speech recognition.</p>
                 <ButtonGroup>
                   <a href='https://github.com/davdli/Forza' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
                   <a href='https://forza.netlify.app/' target="_blank" rel="noreferrer" className="live-link">Live</a>
@@ -79,7 +79,7 @@ const Projects = () => {
             <Fade bottom>
               <ProjectText>
                 <h4 id='left-title'>White Cloud</h4>
-                <p id='left-description'>Platform that will provide users the opportunity to discover music and learn and play the piano instantly.</p>
+                <p id='left-description'>Virtual platform that lets you explore piano music and experiences with your computer keyboard.</p>
                 <ButtonGroup id='left-button'>
                   <a href='https://github.com/davdli/White_Cloud' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
                   <a href='#' className="live-link">Coming Soon</a>
