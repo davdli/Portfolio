@@ -117,7 +117,7 @@ const ProjectsGroup = styled.div`
   align-items: center;
   margin-top: 85px;
   margin-right: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 `
 
 const ProjectInfo = styled.div`
