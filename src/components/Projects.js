@@ -43,7 +43,7 @@ const Projects = () => {
             <Fade bottom>
               <ProjectText>
                 <h4 id='left-title'>Peach Studio</h4>
-                <p id='left-description'>E-commerce website for you to find stylish furiniture, making your home .... sweet home.</p>
+                <p id='left-description'>E-commerce website for you to find stylish furniture, making your home .... sweet home.</p>
                 <ButtonGroup id='left-button'>
                   <a href='https://github.com/davdli/Peach_Studio' target="_blank" rel="noreferrer" className="github-link">GitHub</a>
                   <a href='http://peach-studio.herokuapp.com/' target="_blank" rel="noreferrer" className="live-link">Live</a>
