@@ -1,5 +1,5 @@
 # Portfolio
-Website where you can find my resume, learn more about me, checkout my projects
+Website that provides my resume, inspiration and background, and personal projects.
 
 ## Tech Stack
 - ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&style=flat)
