@@ -88,15 +88,15 @@ const Tech = () => {
             </TechIcon>
             <TechIcon className='tech-icon'>
                 <TechName>
-                  Material UI
+                  Next.js
                 </TechName>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" class="devicon-materialui-plain" alt="materialui" />
+                <i class="devicon-nextjs-line colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
                 <TechName>
-                  Firebase
+                  GraphQL
                 </TechName>
-                <i class="devicon-firebase-plain colored"></i>
+                <i class="devicon-graphql-plain colored"></i>
             </TechIcon>
           </TechGroup>
         </Fade>
@@ -117,15 +117,15 @@ const Tech = () => {
             </TechIcon>
             <TechIcon className='tech-icon'>
                 <TechName>
-                  Jasmine
+                  Tailwind CSS
                 </TechName>
-                <i class="devicon-jasmine-plain colored"></i>
+                <i class="devicon-tailwindcss-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
                 <TechName>
-                  Mocha
+                  Material UI
                 </TechName>
-                <i class="devicon-mocha-plain colored"></i>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" class="devicon-materialui-plain" alt="materialui" />
             </TechIcon>
           </TechGroup>
         </Fade>
@@ -210,10 +210,10 @@ const GlobalStyle = createGlobalStyle`
   .devicon-redux-original  {
     font-size: 56px;
   }
-  .devicon-materialui-plain {
-    height: 56px;
+  .devicon-nextjs-line {
+    font-size: 56px;
   }
-  .devicon-firebase-plain {
+  .devicon-graphql-plain {
     font-size: 56px;
   }
   .devicon-heroku-plain {
@@ -222,11 +222,11 @@ const GlobalStyle = createGlobalStyle`
   .devicon-git-plain {
     font-size: 56px;
   }
-  .devicon-mocha-plain {
+  .devicon-tailwindcss-plain {
     font-size: 56px;
   }
-  .devicon-jasmine-plain {
-    font-size: 56px;
+  .devicon-materialui-plain {
+    height: 56px;
   }
   .tech-icon: hover {
     border: 3px solid #000;
