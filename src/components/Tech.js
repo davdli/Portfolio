@@ -17,27 +17,19 @@ const Tech = () => {
         <Fade clear>
           <TechGroup>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  JavaScript
-                </TechName>
+                <p>JavaScript</p>
                 <i class="devicon-javascript-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  HTML5
-                </TechName>
+                <p>HTML5</p>
                 <i class="devicon-html5-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  CSS3
-                </TechName>
+                <p>CSS3</p>
                 <i class="devicon-css3-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Python
-                </TechName>
+                <p>Python</p>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="devicon-python-plain" alt="python" />
             </TechIcon>
           </TechGroup>
@@ -46,27 +38,19 @@ const Tech = () => {
         <Fade clear>
           <TechGroup>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Node.js
-                </TechName>
+                <p>Node.js</p>
                 <i class="devicon-nodejs-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  React
-                </TechName>
+                <p>React</p>
                 <i class="devicon-react-original colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Express
-                </TechName>
+                <p>Express</p>
                 <i class="devicon-express-original colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  PostgreSQL
-                </TechName>
+                <p>PostgreSQL</p>
                 <i class="devicon-postgresql-plain colored"></i>
             </TechIcon>
           </TechGroup>
@@ -75,27 +59,19 @@ const Tech = () => {
         <Fade clear>
           <TechGroup>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Sequelize
-                </TechName>
+                <p>Sequelize</p>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" class="devicon-sequelize-plain" alt="sequelize"/>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Redux
-                </TechName>
+                <p>Redux</p>
                 <i class="devicon-redux-original colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Next.js
-                </TechName>
+                <p>Next.js</p>
                 <i class="devicon-nextjs-line colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  GraphQL
-                </TechName>
+                <p>GraphQL</p>
                 <i class="devicon-graphql-plain colored"></i>
             </TechIcon>
           </TechGroup>
@@ -104,27 +80,19 @@ const Tech = () => {
         <Fade clear>
           <TechGroup>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Heroku
-                </TechName>
+                <p>Heroku</p>
                 <i class="devicon-heroku-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Git
-                </TechName>
+                <p>Git</p>
                 <i class="devicon-git-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Tailwind CSS
-                </TechName>
+                <p>Tailwind CSS</p>
                 <i class="devicon-tailwindcss-plain colored"></i>
             </TechIcon>
             <TechIcon className='tech-icon'>
-                <TechName>
-                  Material UI
-                </TechName>
+                <p>Material UI</p>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" class="devicon-materialui-plain" alt="materialui" />
             </TechIcon>
           </TechGroup>
@@ -167,7 +135,7 @@ const TechIcon = styled.div`
   }
 `
 
-const TechName = styled.div`
+const p = styled.div`
   color: #5C5D61;
   font-size: 16px;
   font-weight: 500;
@@ -175,6 +143,12 @@ const TechName = styled.div`
 `
 
 const GlobalStyle = createGlobalStyle`
+  p {
+    color: #5C5D61;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 0px 20px 0px;
+  }
   #tech-header {
     font-size: 32px;
     font-weight: 500;
@@ -230,5 +204,8 @@ const GlobalStyle = createGlobalStyle`
   }
   .tech-icon: hover {
     border: 3px solid #000;
+  }
+  .tech-icon:hover p {
+    color: #000;
   }
 `
