@@ -4,7 +4,6 @@ import {createGlobalStyle} from "styled-components";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import resume from '../assets/David_Li_Resume.pdf';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
@@ -30,7 +29,7 @@ const Header = () => {
           <Link to="contact" href="#" smooth={true} duration={4000} className="nav-link">Contact</Link>
         </Menu>
         <RightMenu>
-          <a href={resume} target="_blank" rel="noreferrer" className="nav-link">Resume</a>
+          <a href='' className="nav-link">Resume</a>
           <CustomMenu onClick={() => setBurgerStatus(true)}/>
         </RightMenu>
       </Fade>
@@ -45,7 +44,7 @@ const Header = () => {
         <li><a href="#projects" onClick={() => setBurgerStatus(false)}>Projects</a></li>
         <li><a href="#technologies" onClick={() => setBurgerStatus(false)}>Technologies</a></li>
         <li><a href="#contact" onClick={() => setBurgerStatus(false)}>Contact</a></li>
-        <li><a href={resume} target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>Resume</a></li>
+        <li><a href='' onClick={() => setBurgerStatus(false)}>Resume</a></li>
         <li><a href="https://github.com/davdli" target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/davdli/" target="_blank" rel="noreferrer" onClick={() => setBurgerStatus(false)}>LinkedIn</a></li>
       </BurgerNav>

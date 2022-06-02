@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import { Link } from 'react-scroll';
-import resume from '../assets/David_Li_Resume.pdf';
 
 const Footer = () => {
   return (
@@ -15,7 +14,7 @@ const Footer = () => {
           <Link to="projects" href="#" smooth={true} duration={2000} className="footer-link">Projects</Link>
           <Link to="technologies" href="#" smooth={true} duration={1000} className="footer-link">Technologies</Link>
           <Link to="contact" href="#" smooth={true} duration={1000} className="footer-link">Contact</Link>
-          <a href={resume} target="_blank" rel="noreferrer" className="footer-link">Resume</a>
+          <a href='' className="footer-link">Resume</a>
         </FirstRow>
         <SecondRow>
           <FooterText>

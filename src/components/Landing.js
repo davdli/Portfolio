@@ -5,7 +5,6 @@ import IcelandImage from '../assets/Iceland.jpeg';
 import DownArrow from '../assets/down-arrow.svg';
 import Header from './Header';
 import Fade from 'react-reveal/Fade';
-import resume from '../assets/David_Li_Resume.pdf';
 
 const Landing = () => {
   return (
@@ -21,10 +20,10 @@ const Landing = () => {
       <Buttons>
         <ButtonGroup>
           <Fade left>
-            <a href={resume} target="_blank" rel="noreferrer" id="resume-link">RESUME</a>
+            <a href='' id="resume-link">RESUME</a>
           </Fade>
           <Fade right>
-            <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="contact-link">CONTACT</a>
+            <a href='' id="contact-link">CONTACT</a>
           </Fade>
         </ButtonGroup>
           <img src={DownArrow} alt='arrow' id='landing-img'/>
