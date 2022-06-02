@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {createGlobalStyle} from "styled-components";
 import { Link } from 'react-scroll';
-import resume from '../assets/David_Li_Resume.pdf';
 
 const Footer = () => {
   return (
