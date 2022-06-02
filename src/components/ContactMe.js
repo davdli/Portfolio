@@ -17,7 +17,7 @@ const ContactMe = () => {
           <ContactText>
             Interested in working together or have any questions?
           </ContactText>
-          <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="email-link">CONTACT ME</a>
+          <a href='' id="email-link">CONTACT ME</a>
         </Fade>
       </Wrap>
     </div>

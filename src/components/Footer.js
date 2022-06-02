@@ -15,7 +15,7 @@ const Footer = () => {
           <Link to="projects" href="#" smooth={true} duration={2000} className="footer-link">Projects</Link>
           <Link to="technologies" href="#" smooth={true} duration={1000} className="footer-link">Technologies</Link>
           <Link to="contact" href="#" smooth={true} duration={1000} className="footer-link">Contact</Link>
-          <a href={resume} target="_blank" rel="noreferrer" className="footer-link">Resume</a>
+          <a href='' className="footer-link">Resume</a>
         </FirstRow>
         <SecondRow>
           <FooterText>

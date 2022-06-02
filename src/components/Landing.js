@@ -21,10 +21,10 @@ const Landing = () => {
       <Buttons>
         <ButtonGroup>
           <Fade left>
-            <a href={resume} target="_blank" rel="noreferrer" id="resume-link">RESUME</a>
+            <a href='' id="resume-link">RESUME</a>
           </Fade>
           <Fade right>
-            <a href="mailto:davdli2323@gmail.com" target="_blank" rel="noreferrer" id="contact-link">CONTACT</a>
+            <a href='' id="contact-link">CONTACT</a>
           </Fade>
         </ButtonGroup>
           <img src={DownArrow} alt='arrow' id='landing-img'/>
